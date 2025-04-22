@@ -50,11 +50,11 @@
 
     ![next](images/9.jpg)
 
-16. Leave the remaining defaults and then select the Review + create button at the bottom of the page.
+16. Leave the remaining defaults and then select the `Review + create` button at the bottom of the page.
 
     ![Review + create button](images/10.jpg)
 
-17. After validation runs, select the Create button at the bottom of the page
+17. After validation runs, select the `Create` button at the bottom of the page
 
     ![create](images/11.jpg)
 
@@ -62,19 +62,19 @@
 
     ![deploy](images/12.jpg)
 
-19. After deployment is complete, select Go to resource.
+19. After deployment is complete, select `Go to resource`.
 
     ![go](images/13.jpg)
 
-20. On the overview page for your virtual machine, select the Connect > RDP.
+20. On the overview page for your virtual machine, click on connect and  select the `Connect`
 
     ![connect](images/14.jpg)
 
-21. scroll down and click Download RDP file.
+21. Scroll down and click `Download RDP file`.
 
     ![download](images/15.jpg)
 
-22. GO to downloads and Open the downloaded RDP file and click Connect when prompted
+22. GO to downloads and Open the `downloaded RDP file` and click `Connect` when prompted
 
     ![connectrdp](images/16.jpg)
 
