@@ -85,8 +85,6 @@
 
 13. Select the **delete public ip and nic when vm is deleted**  and leave the remaining defaults
 
-    
-
     ![next](images/9.jpg)
 
 18. Leave the remaining defaults and then select the `Review + create` button at the bottom of the page.
