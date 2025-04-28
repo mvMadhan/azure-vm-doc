@@ -1,4 +1,15 @@
 # AZURE VM CREATION
+
+# OVERVIEW 
+   
+In this process, we'll create a virtual machine (VM) in Microsoft Azure, which provides scalable, on-demand computing       resources in the cloud. We'll configure the VM with desired specifications, such as operating system, size, and networking   options. Once deployed, we'll connect to the VM using Remote Desktop Protocol (RDP) for Windows or SSH for Linux,          enabling remote management and operation of the virtual environment.
+
+# TASKS
+   - ### Task 1 - Create a Virtual Machine
+   - ### Task 2 - Connect Virtual Machine
+
+## Task 1 
+
 1. Login to azure account
 2. Click on **search** **(1)**
    
@@ -22,7 +33,7 @@
    ![sub/rg](image/4.png)
 
 
-6. Under **Instance details**, enter `windowsvm` for the Virtual machine name **(1)** and choose region **(2)** `east us`, in **availability option** select **availability zone**  and select `zone 1` in  **availability zone** **(3)**
+6. Under **Instance details**, enter `windowsvm` for the Virtual machine name **(3)** and choose region **(4)** `east us`, in **availability option** select **availability zone**  and select `zone 1` in  **availability zone** **(5)**
    
    |Label|Name|
    |---|---|
@@ -33,7 +44,7 @@
 
    ![instance details](image/5.png)
 
-7. Choose `Windows Server 2022 Datacenter: Azure Edition - x64 Gen 2` for the **Image** **(1)**and select `Standard_DS1_v2` for **size** **(2)**. Leave the other defaults.
+7. Choose `Windows Server 2022 Datacenter: Azure Edition - x64 Gen 2` for the **Image** **(6)**and select `Standard_DS1_v2` for **size** **(7)**. Leave the other defaults.
 
    |Label|Name|
    |---|---|
@@ -42,9 +53,9 @@
 
    ![image](image/6.png)
 
-8. Under **Administrator account**, provide a **username** **(1)** , such as `azureuser` and a **password** **(2)** as `madhanshiva@12`. The password must be at least 12 characters long `Azure portal - between 12 - 123` characters.
+8. Under **Administrator account**, provide a **username** **(8)** such as `azureuser` and a **password** **(9)** as `madhanshiva@12`, same for **confirm password** **(10)** , The password must be at least 12 characters long `Azure portal - between 12 - 123` characters.
 
-   8.1 Under **Inbound port rules**, choose **Allow selected ports** and then select `RDP (3389)` from the drop-down of **select inbound ports** **(3)**.
+   8.1 Under **Inbound port rules**, choose **Allow selected ports** and then select `RDP (3389)` from the drop-down of **select inbound ports** **(11)**.
 
    |Label|Name|
    |---|---|
@@ -55,9 +66,9 @@
 
    ![addmin name/pass](image/7.png)
 
-9. Leave the remaining defaults and then select the `next - Disk` **(1)** button at the bottom of the page.
+9. Leave the remaining defaults and then select the `next - Disk` **(12)** button at the bottom of the page.
 
-   ![confirm](image/8.png)
+   ![confirm](image/21disk.png)
    
 10. Under **os disk** , select the **os disk size** **(1)** `image default 127GB` and **os disk type** **(2)** `Standard SSD` and select **delete with vm** **(3)**
 
@@ -69,7 +80,7 @@
    
     ![disk](image/9.png)
 
-11. Leave the remaining defaults and then select the `next - Networking` **(1)** button at the bottom of the page.
+11. Leave the remaining defaults and then select the `next - Networking` **(4)** button at the bottom of the page.
 
     ![next](image/10.png)
 
@@ -83,11 +94,11 @@
     
     ![network](image/11.png)
 
-13. Select the **delete public ip and nic when vm is deleted** **(1)** and leave the remaining defaults
+13. Select the **delete public ip and nic when vm is deleted** **(4)** and leave the remaining defaults
 
     ![next](image/12.png)
 
-14. Leave the remaining defaults and then select the `Review + create` **(1)** button at the bottom of the page.
+14. Leave the remaining defaults and then select the `Review + create` **(5)** button at the bottom of the page.
 
     ![Review + create button](image/13.png)
 
@@ -95,30 +106,32 @@
 
     ![create](image/14.png)
 
-16. After deployment is complete, select `Go to resource` **(1)**.
+## Task 2
+
+1. After deployment is complete, select `Go to resource` **(1)**.
 
     ![go](image/15.png)
 
-17. On the overview page for your virtual machine, click on connect **(1)** and  select the `Connect` **(2)**
+2. On the overview page for your virtual machine, click on connect **(1)** and  select the `Connect` **(2)**
     
 
     ![connect](image/16.png)
 
-18. Scroll down and click `Download RDP file` **(1)**.
+3. Scroll down and click `Download RDP file` **(1)**.
 
     ![download](image/17.png)
 
-19. GO to downloads and Open the `downloaded RDP file` and click `Connect` **(1)** when prompted
+3. GO to downloads and Open the `downloaded RDP file` and click `Connect` **(1)** when prompted
 
-    ![connectrdp](images/16.jpg)
+    ![connectrdp](image/18.png)
 
-20.  Type the username `azureuser`, enter the password you created for the virtual machine in **password block** **(1)** , and then click **OK** **(2)**.
+4.  Type the username `azureuser`, enter the password you created for the virtual machine in **password block** **(1)** , and then click **OK** **(2)**.
 
-     ![username/pass](images/17.jpg)
+     ![username/pass](image/19.png)
 
-27. You may receive a certificate warning during the sign-in process. Click **Yes** **(1)** or Continue to create the connection.
+5. You may receive a certificate warning during the sign-in process. Click **Yes** **(1)** or Continue to create the connection.
 
-    ![cert](images/18.jpg)
+    ![cert](image/20.png)
     
 
 
